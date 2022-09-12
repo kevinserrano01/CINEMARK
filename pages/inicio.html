@@ -39,7 +39,9 @@
                         <a class="nav-link active" href="./SoloEnCine.html">Solo en Cines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./miLista.html">Mi lista</a>
+                        <a class="nav-link active" href="./miLista.html">
+                            Mi lista <span id="num" class="badge bg-secondary">0</span>
+                        </a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -112,7 +114,7 @@
                 <img src="../images/Infinity-War.jpg" class="d-block w-100" alt="Minions">
                 <div class="carousel-caption d-none d-md-block">
                     <h2>Infinity War</h2>
-                    <p>Some representative placeholder content for the third slide. Some representative placeholder content for the first slide. Some representative placeholder content for the first slide.</p>
+                    <p>Los Vengadores deben evitar que Thanos, un señor de la guerra intergaláctico, ponga sus manos en todas las piedras infinitas. Sin embargo, Thanos está preparado para hacer todo lo posible para llevar a cabo su loco plan.</p>
                     <a href="../movies/INTRODUCCION-PELICULA.mp4">
                         <button type="button" class="btn btn-outline-info">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
@@ -121,7 +123,7 @@
                             Ver
                         </button>
                     </a>
-                    <button type="button" class="btn btn-outline-light">
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                             <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                         </svg>
@@ -148,20 +150,18 @@
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dragon-Ball-Super.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/iron-man.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Titanic-Portada.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Suicide-Squad.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dead-Pool.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dragon-Ball-GT.png" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Frozen-El-reino-del-hielo.jpg" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
@@ -184,20 +184,18 @@
             <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Spider-Man.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dead-Pool.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dragon-Ball-GT.png" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Frozen-El-reino-del-hielo.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="v pe-2" src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Dragon-Ball-Super.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/iron-man.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Titanic-Portada.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Suicide-Squad.jpg" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
@@ -220,20 +218,18 @@
             <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Joker.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images//Harry-Potter.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/iron-man.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/X-Men-Origin_Wolverine.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/Dead-Pool.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" class="pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
@@ -256,20 +252,18 @@
             <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Avenger-end-game.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/basalagunask.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Monsters.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/Sherek.jfif" alt="portada"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="../images/Minions.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image pe-2" src="../images/viaje_d-Arlo.jfif" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
@@ -296,7 +290,7 @@
                     <li class="nav-item"><a href="./SoloEnCines.html" class="nav-link px-2 text-muted">Solo En Cines</a></li>
                     <li class="nav-item"><a href="./miLista.html" class="nav-link px-2 text-muted">Mi lista</a></li>
                 </ul>
-                <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+                <p class="text-center text-muted">&copy; 2022 Kev</p>
             </footer>
         </div>
 
@@ -340,7 +334,6 @@
                             </div>
                             <div class="row pt-4">
                                 <div class="col-3">
-
                                     <div class="accordion accordion-flush bg-dark" id="accordionFlushExample">
                                         <div class="accordion-item bg-dark">
                                             <h2 class="accordion-header" id="flush-headingOne">
@@ -354,14 +347,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                 </div>
                 <div class="modal-footer bg-dark">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button id="btnAddPeliEnLista" type="button" class="btn btn-info fw-bold">Agregar a mi lista</button>
+                    <button type="button" id="btnAddPeliALista" class="btn btn-info fw-bold">Agregar a mi lista</button>
                 </div>
             </div>
         </div>
@@ -427,7 +419,73 @@
                 </div>
                 <div class="modal-footer bg-dark">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-info fw-bold">Agregar a mi lista</button>
+                    <button type="button" id="btnAddPeliALista" class="btnAddPeliALista btn btn-info fw-bold">Agregar a mi lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================================================ -->
+
+    <!-- Modal 3 diapositiva =====================================================================================-->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Infinity War</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-dark text-light">
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="col-12 text-center">
+                                    <img src="../images/Infinity-War.jpg" alt="" width="1000px">
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-12">
+                                    <a href="../movies/INTRODUCCION-PELICULA.mp4">
+                                        <button type="button" class="btn btn-light">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                                <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                            </svg>
+                                            Reproducir
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-9">Después de ser arrojada a la calle por Joker, Harley lucha por levantarse. Sin embargo, Harley se une a Huntress, Black Canary y Renee Montoya para derrotar a un gángster y proteger a una niña.</div>
+                                <div class="col-3  text-center">
+                                    <p> <span class="text-muted">Genero:</span> Accion</p>
+                                    <p> <span class="text-muted">Creador:</span>  Anthony Russo</p>
+                                    <p> <span class="text-muted">Duracion:</span>  2h 29 min</p>
+                                </div>
+                            </div>
+                            <div class="row pt-4">
+                                <div class="col-3">
+
+                                    <div class="accordion accordion-flush bg-dark" id="accordionFlushExample">
+                                        <div class="accordion-item bg-dark">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed bg-dark text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Ver Trailer
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_7Nv0cBlgXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="modal-footer bg-dark">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" id="btnAddPeliALista" class="btn btn-info fw-bold">Agregar a mi lista</button>
                 </div>
             </div>
         </div>
@@ -437,6 +495,6 @@
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js script-->
-    <script src="./script/main.js"></script>
+    <script src="../script/inicio.js"></script>
 </body>
 </html>
