@@ -3,3 +3,37 @@ body{
     padding: 0;
     background-color: #070707;
 }
+
+#navbar-name{
+    color: #00ccfe;
+    font-size: 35px;
+    font-family: 'Belleza', sans-serif;
+}
+
+.nav-link{
+    color: #ffff
+}
+.nav-link:hover{
+    color: #00ccfe;
+}
+
+.bi-person-circle{
+    color: #ffffff;
+}
+.bi-person-circle:hover{
+    color: #cacaca;
+}
+
+.bi-search{
+    color: #ffffff;
+    margin-right: 10px;
+    border: 2px solid #f9f9f9;
+    border-radius: 50px;
+}
+.bi-search:hover{
+    color: #d9d9d9;
+}
+
+.bi-list{
+    color: #00ccfe;
+}

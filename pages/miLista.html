@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css styles -->
@@ -13,40 +17,46 @@
 <body>
 
     <!-- Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2 pb-2">
+    <nav class="navbar navbar-expand-lg pt-2 pb-2">
         <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">Cinepluss</a>
+                <a id="navbar-name" class="navbar-brand" href="./inicio.html">Cinepluss</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </span>
                 </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./peliculas.html">Peliculas</a>
+                        <a class="navbarLink nav-link active" aria-current="page" href="./peliculas.html">Peliculas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./series.html">Series</a>
+                        <a class="navbarLink nav-link active" href="./series.html">Series</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./SoloEnCines.html">Solo En Cines</a>
+                        <a class="navbarLink nav-link active" href="./SoloEnCine.html">Solo en Cines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Mi lista</a>
+                        <a class="navbarLink nav-link active" href="#">Mi lista</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <!-- <input class="form-control me-2" type="search" placeholder="Busca una pelicula" aria-label="Search"> -->
-                    <button class="btn btn-outline-success" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 -2 16 22">
                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                         </svg>
-                    </button>
-                    <button class="btn btn-outline-success" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                        </svg>
-                    </button>
+                    </a>
+                    <!-- ponerlo con js al input -->
+                    <!-- <input class="form-control me-2" type="search" placeholder="Busca una pelicula" aria-label="Search"> -->
+
+                    <a href="./login.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                    </a>
                 </form>
             </div>
         </div>
@@ -96,37 +106,11 @@
     <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
     <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- prueba Modal==================== -->
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ==================================== -->
-
     <!-- start Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
         <div class="container-fluid pt-5">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Inicio</a></li>
+                    <li class="nav-item"><a href="./inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
                     <li class="nav-item"><a href="./peliculas.html" class="nav-link px-2 text-muted">Peliculas</a></li>
                     <li class="nav-item"><a href="./series.html" class="nav-link px-2 text-muted">Series</a></li>
                     <li class="nav-item"><a href="./novedades.html" class="nav-link px-2 text-muted">Novedades</a></li>
@@ -142,7 +126,7 @@
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js script-->
-    <script src="./script/index.js"></script>
+    <script src="../script/main.js"></script>
 
 </body>
 </html>
