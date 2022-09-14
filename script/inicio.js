@@ -1,10 +1,10 @@
 // Botones para agregar pelicula a mi lista
+const usuario = document.querySelector('#usuario');
 const addPeliLista = document.querySelector('#btnAddPeliALista');
 const removePeliLista = document.querySelector('.removePeliDeLista'); // boton de seccion "mi lista" para eliminar una pelicula de mi lista
 const numero = document.querySelector('#num');
 const numero2 = document.querySelector('#num2');
 let contador = localStorage.getItem('guardados');
-
 let seleccionDePeliculas = document.querySelector('#peliculasAGuardar') // select
 let peliculasGuardadas = document.querySelector('#peliculasGuardadas')
 
@@ -80,6 +80,14 @@ function incrementar() {
     }
 }
 
+// una variable constante para que luego de crear la primera cuenta no se cambie el nombre
+function modalCuenta() {
+    const usuario1 = localStorage.key(0);
+    console.log(usuario1)
+    usuario.innerHTML = `Hola ${usuario1}!`
+}
+modalCuenta()
+
 
 // function decrementar() {
 //     contador++
@@ -87,13 +95,3 @@ function incrementar() {
 //     localStorage.setItem('guardados', contador)
 //     console.log('me diste un click  decrementar')
 // }
-
-
-
-// const personajeEnLocalStorage = localStorage.getItem("NuevoPersonaje");
-// const NuevoPJParseado = JSON.parse(personajeEnLocalStorage);
-
-const usuario = localStorage.getItem('kevin01')
-const usuarioParseado = JSON.parse(usuario);
-// console.log(usuarioParseado.userName)
-// alert(`User ${usuarioParseado.userName}`)

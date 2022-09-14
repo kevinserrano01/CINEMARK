@@ -31,6 +31,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Peliculas</a>
                     </li>
                     <li class="nav-item">
@@ -51,12 +54,12 @@
                     <!-- ponerlo con js al input -->
                     <!-- <input class="form-control me-2" type="search" placeholder="Busca una pelicula" aria-label="Search"> -->
 
-                    <a href="../index.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                            </svg>
-                    </a>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -134,12 +137,12 @@
     <!-- end Carousel ---------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <!-- start Select -------------------------------------------------------------------------------------------->
-    <select name="select" id="seleccion">
+    <!-- <select name="select" id="seleccion">
         <option value="select">Seleccionar Pelicula a guardar...</option>
         <option value="Batman">Batman</option>
         <option value="Harley-Quinn">Harley Quinn</option>
         <option value="Infinity-War">Infinity War</option>
-    </select>
+    </select> -->
     <!-- end Select -------------------------------------------------------------------------------------------->
 
     <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -151,11 +154,11 @@
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image mb-2 me-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
                         <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
@@ -185,18 +188,18 @@
             <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Los-Simpsons.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/It.jpg" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
@@ -219,18 +222,18 @@
             <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidos-y-furiosos-8.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
-                        <a href="#"><img class="portada-image pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/Wall·E.jpg" alt="portada" width="300px"></a>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
@@ -253,11 +256,11 @@
             <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img class="portada-image pe-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
+                        <a href="#"><img class="portada-image me-2 mb-2" src="../images/rapidosyfuriosos-6.jpg" alt="portada" width="300px"></a>
                     </div>
                     <div class="carousel-item">
                         <a href="#"><img class="portada-image pe-2" src="../images/Dead-Pool.jpg" alt="portada" width="300px"></a>
@@ -357,6 +360,22 @@
         </div>
     </div>
     <!-- ============================================================================================ -->
+
+    <!-- MODAL USUARIO - CUENTA ===========================================================================-->
+    <!-- Modal -->
+    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cuenta</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p id="usuario" class="text-light fw-bold m-4 fs-4"></p>
+            <a href="../index.html">
+                <button type="button" class="btn btn-secondary m-4">Cerrar Sesion</button>
+            </a>
+        </div>
+    </div>
+    <!-- ===========================================================================-->
 
 
     <!-- js bootstrap -->

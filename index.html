@@ -42,14 +42,15 @@
                 <!-- form login -->
                 <form>
                     <div class="mb-3">
-                        <label for="signInUser" class="form-label">Email</label>
+                        <label for="signInUser" class="form-label">Nombre y Apellido</label>
                         <input type="email" name="usuario" class="form-control" id="signInUser" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="signInPass" class="form-label">Password</label>
+                        <label for="signInPass" class="form-label">Contraseña</label>
                         <input type="password" name="password" class="form-control" id="signInPass">
                     </div>
+                    <p id="alerta1" class="text-danger fw-bold"></p>
                     <button type="button" id="signInButton" class="btn btn-info">Iniciar Sesion</button>
                 </form>
                 <!-- -------------- -->
@@ -66,14 +67,16 @@
                 <!-- form register -->
                 <form>
                     <div class="mb-3">
-                        <label for="signInUser" class="form-label">Email</label>
+                        <label for="signInUser" class="form-label">Nombre y Apellido</label>
                         <input type="email" name="usuario" class="form-control" id="signUpUser" aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="signInPass" class="form-label">Password</label>
+                        <label for="signInPass" class="form-label">Contraseña</label>
                         <input type="password" name="password" class="form-control" id="signUpPass">
                     </div>
+                    <p id="alerta2" class="text-danger fw-bold"></p>
+                    <p id="alerta3" class="text-success fw-bold"></p>
                     <button type="button" id="signUpButton" class="btn btn-info">Registrarse</button>
                 </form>
                 <!-- -------------- -->

@@ -31,6 +31,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./peliculas.html">Peliculas</a>
                     </li>
                     <li class="nav-item">
@@ -51,12 +54,12 @@
                     <!-- ponerlo con js al input -->
                     <!-- <input class="form-control me-2" type="search" placeholder="Busca una pelicula" aria-label="Search"> -->
 
-                    <a href="../index.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                            </svg>
-                    </a>
+                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </button>
                 </form>
             </div>
         </div>
@@ -72,29 +75,34 @@
         <div class="container mt-3">
             <div class="row">
                 <div class="col-xs-12 col-md-2 col-lg-3">
-                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                    <select id="seleccionPelicula" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
                         <option selected>Seleccione una Pelicula...</option>
                     </select>
                 </div>
                 <div class="col-xs-12 col-md-2 col-lg-3">
-                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                    <select id="seleccionCine" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
                         <option selected>Seleccione un Cine...</option>
                     </select>
                 </div>
                 <div class="col-xs-12 col-md-3 col-lg-2">
-                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                    <select id="seleccionDia" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
                         <option selected>Seleccione un dia...</option>
                     </select>
                 </div>
                 <div class="col-xs-12 col-md-2 col-lg-2">
-                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                    <select id="seleccionHorario" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
                         <option selected>Horario...</option>
                     </select>
                 </div>
                 <div class="col-xs-12 col-md-2 col-lg-2">
-                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalLista" id="btnAddPeliAListaLista">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalToggle" id="btnComprarEntrada">
                         Comprar entrada
                     </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p id="aviso" class="text-danger fw-bold text-center"></p>
                 </div>
             </div>
         </div>
@@ -103,34 +111,30 @@
         <div class="row pt-5">
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                    <img class="mb-3" src="../images/Bienvenidos-al-infierno.jpg" alt="portada" width="300px">
                 </a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                    <img class="mb-3" src="../images/Dragon-ball-super-new.jpg" alt="portada" width="300px">
                 </a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                    <img class="mb-3" src="../images/El-Paraiso.jpg" alt="portada" width="300px">
                 </a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                    <img class="mb-3" src="../images/Thor.jpg" alt="portada" width="300px">
                 </a>
             </div>
         </div>
+
         <div class="row pt-5">
             <div class="col-xs-12 col-md-6 col-lg-3">
                 <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
-                </a>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                    <img class="mb-3" src="../images/Telefono-Negro.jpg" alt="portada" width="300px">
                 </a>
             </div>
         </div>
@@ -154,10 +158,48 @@
         <div class="b-example-divider"></div>
     <!-- end Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
 
+    <!-- MODAL ALERT - COMPRAR PELICULA ===========================================================================-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">ATENCIÓN</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="resumenCompra" class="modal-body">
+                    <!-- TU SELECCIÓN: <span class="fw-bold">DRAGON BALL SUPER: SUPER HÉROE - 2D ESPAÑOL JUEVES 15 15:20 hrs.</span>  -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning fw-bold">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ===========================================================================-->
+
+
+    <!-- MODAL USUARIO - CUENTA ===========================================================================-->
+    <!-- Modal -->
+    <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Cuenta</h5>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p id="usuario" class="text-light fw-bold m-4 fs-4"></p>
+            <a href="../index.html">
+                <button type="button" class="btn btn-secondary m-4">Cerrar Sesion</button>
+            </a>
+        </div>
+    </div>
+    <!-- ===========================================================================-->
+
+
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js script-->
-    <script src="../script/Pelicula.js"></script>
+    <script src="../script/soloEnCine.js"></script>
 
 </body>
 </html>

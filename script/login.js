@@ -4,6 +4,9 @@ let signInUser = document.querySelector("#signInUser");
 let signInPass = document.querySelector("#signInPass");
 let signInButton = document.querySelector("#signInButton");
 let signUpButton = document.querySelector("#signUpButton");
+const alerta1 = document.querySelector('#alerta1')
+const alerta2 = document.querySelector('#alerta2')
+const alerta3 = document.querySelector('#alerta3')
 let inSession = false;
 let sessionKey;
 
@@ -19,7 +22,7 @@ class userInfo {
 
 function signUp() { //REGISTRARSE
     if (signUpUser.value == "" || signUpPass.value == "") {
-        alert("Necesitas completar todos los campos para poder registrarse");
+        alerta2.innerHTML = 'Necesitas completar todos los campos para poder registrarse'
     } else {
         let userExists = false;
 
@@ -27,18 +30,19 @@ function signUp() { //REGISTRARSE
         if (signUpUser.value == localStorage.key(i)) userExists = true;
 
         if (userExists) {
-            alert("Este nombre de usuario ya se encuentra registrado:(");
+            alerta2.innerHTML = 'Este nombre de usuario ya se encuentra registrado'
         } else {
             let usuario = new userInfo(signUpUser.value, signUpPass.value);
             localStorage.setItem(signUpUser.value, JSON.stringify(usuario));
-            alert("Cuenta registrada, Ahora inicia sesion y disfruta de las peliculas!");
+            alerta2.innerHTML = ''
+            alerta3.innerHTML = 'Cuenta registrada, Ahora inicia sesion y disfruta de las peliculas!'
         }
     }
 }
 
 function signIn() { // INICIAR SESION
     if (signInUser.value == "" || signInPass.value == "") {
-        alert("Necesitas completar todos los campos para poder iniciar sesion");
+        alerta1.innerHTML = 'Necesitas completar todos los campos para poder iniciar sesion'
     } else {
         let userExists = false;
         for (let i = 0; i < localStorage.length; i++)
@@ -48,7 +52,7 @@ function signIn() { // INICIAR SESION
         }
 
         if (!userExists) {
-            alert("Parece que este usuario no existe:(");
+            alerta1.innerHTML = 'El usuario no existe, registrate primero.'
         } else {
             let user = JSON.parse(localStorage.getItem(signInUser.value));
             if (signInPass.value == user.userPass) {
@@ -56,7 +60,7 @@ function signIn() { // INICIAR SESION
                 alert(`¡Bienvenido, ${signInUser.value}!`);
                 window.location = './pages/inicio.html'
             } else {
-                alert("Contraseña incorrecta!");
+                alerta1.innerHTML = 'Contraseña incorrecta!'
             }
         }
     }
