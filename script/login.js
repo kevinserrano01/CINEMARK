@@ -31,7 +31,7 @@ function signUp() { //REGISTRARSE
         } else {
             let usuario = new userInfo(signUpUser.value, signUpPass.value);
             localStorage.setItem(signUpUser.value, JSON.stringify(usuario));
-            alert("Cuenta registrada! Ahora inicia sesion y empieza a anotar <3");
+            alert("Cuenta registrada, Ahora inicia sesion y disfruta de las peliculas!");
         }
     }
 }

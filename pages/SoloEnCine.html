@@ -7,6 +7,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../icon/2809591.ico">
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -31,9 +32,6 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./peliculas.html">Peliculas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./series.html">Series</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="#">Solo en Cines</a>
@@ -65,249 +63,75 @@
     </nav>
     <!-- end Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <!-- start Carousel ---------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./images/batman.jpg" class="d-block w-100" alt="Batman">
-            <div class="carousel-caption d-none d-md-block">
-            <h2>Batman</h2>
-            <p>Some representative placeholder content for the first slide. Some representative placeholder content for the first slide. Some representative placeholder content for the first slide.</p>
-            <button type="button" class="btn btn-outline-info">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                </svg>
-                Ver
-            </button>
-            <button type="button" class="btn btn-outline-light">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                </svg>
-                Mas informacion
-            </button>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="./images/Harley-Quinn.jpg" class="d-block w-100" alt="Harley-Quinn">
-            <div class="carousel-caption d-none d-md-block">
-            <h2>Harley Quinn</h2>
-            <p>Some representative placeholder content for the second slide. Some representative placeholder content for the first slide. Some representative placeholder content for the first slide.</p>
-            <button type="button" class="btn btn-outline-info">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                </svg>
-                Ver
-            </button>
-            <button type="button" class="btn btn-outline-light">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                </svg>
-                Mas informacion
-            </button>
-            </div>
-        </div>
-            <div class="carousel-item">
-                <img src="./images/Infinity-War.jpg" class="d-block w-100" alt="Minions">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Infinity War</h2>
-                    <p>Some representative placeholder content for the third slide. Some representative placeholder content for the first slide. Some representative placeholder content for the first slide.</p>
-                    <button type="button" class="btn btn-outline-info">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                        </svg>
-                        Ver
-                    </button>
-                    <button type="button" class="btn btn-outline-light">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-                        </svg>
-                        Mas informacion
-                    </button>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-    <!-- end Carousel ---------------------------------------------------------------------------------------------------------------------------------------------------->
-
     <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
-    
     <!-- cs 1 ------------------------------------------------------>
-    <div class="container-fluid ">
-        <h2 class="populares text-light pt-4">Populares en Cinepluss</h2>
-        <div class="row">
-            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
+    <div class="container">
+        <h2 class="text-light pt-4">Solo en Cines</h2>
+        <h3 class="text-light pt-4">Compra tu entrada ahora mismo !</h3>
+        <!-- start Select -------------------------------------------------------------------------------------------->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-lg-3">
+                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione una Pelicula...</option>
+                    </select>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="col-xs-12 col-md-2 col-lg-3">
+                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione un Cine...</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-2">
+                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                        <option selected>Seleccione un dia...</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-2 col-lg-2">
+                    <select id="peliculasAGuardar" name="peliculasAGuardar" class="form-select" aria-label="Default select example">
+                        <option selected>Horario...</option>
+                    </select>
+                </div>
+                <div class="col-xs-12 col-md-2 col-lg-2">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModalLista" id="btnAddPeliAListaLista">
+                        Comprar entrada
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
+        <!-- end Select -------------------------------------------------------------------------------------------->
 
-    <!-- cs 2 ------------------------------------------------------>
-    <div class="container-fluid pt-5">
-        <h2 class="populares text-light pt-4">Tendencias</h2>
-        <div class="row">
-            <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Spider-Man.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row pt-5">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
             </div>
         </div>
-    </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!-- cs 3 ------------------------------------------------------>
-    <div class="container-fluid pt-5">
-        <h2 class="populares text-light pt-4">Para Jovenes</h2>
-        <div class="row">
-            <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Joker.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <div class="row pt-5">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
             </div>
-        </div>
-    </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <!-- cs 4 ------------------------------------------------------>
-    <div class="container-fluid pt-5">
-        <h2 class="populares text-light pt-4">En familia</h2>
-        <div class="row">
-            <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                        <a href="#"><img src="./images/Minions.jpg" alt="portada" width="300px"></a>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="#">
+                    <img class="mb-3" src="../images/Transformers_La-era-de-la-extinción.jpg" alt="portada" width="300px">
+                </a>
             </div>
         </div>
     </div>
@@ -320,7 +144,6 @@
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="./inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
                     <li class="nav-item"><a href="./peliculas.html" class="nav-link px-2 text-muted">Peliculas</a></li>
-                    <li class="nav-item"><a href="./series.html" class="nav-link px-2 text-muted">Series</a></li>
                     <li class="nav-item"><a href="./novedades.html" class="nav-link px-2 text-muted">Novedades</a></li>
                     <li class="nav-item"><a href="./miLista.html" class="nav-link px-2 text-muted">Mi lista</a></li>
                 </ul>
@@ -334,7 +157,10 @@
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- js script-->
-    <script src="../script/main.js"></script>
+    <script src="../script/Pelicula.js"></script>
 
 </body>
 </html>
+
+<!-- Crear Select, agregar id al select, Luego llamo al select con DOM y luego manipulacion -->
+<!-- Manipular con Objetos -->
