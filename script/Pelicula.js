@@ -1,11 +1,5 @@
-const btnBatman = document.querySelector('#btnBatman');
-const btnInfinityWar = document.querySelector('#btnInfinityWar');
-
-
-
 class Pelicula {
     constructor(nombre, genero, duracion, descripcion) {
-        // this.id = id -> preguntar
         this.nombre = nombre
         this.genero = genero
         this.duracion = duracion
@@ -18,19 +12,6 @@ const Harley_Quinn = new Pelicula("Harley Quinn", "Accion", "2h 18 min", "Despu√
 const Infinity_War = new Pelicula('Infinity War', 'Accion', '2h 29 min', 'Lorem, ipsum dolor sit amet consectetur itatibus sed voluptate reprehenderit. Asdasdwas')
 
 
-btnBatman.addEventListener('click', addPeliculaEnLista)
-
-function recibirPelicula(pelicula) {
-    peliculasSoloEnCines.push(pelicula)
-}
-
-// funcion agregar pelicula a mi lista
-function addPeliculaEnLista() {
-    recibirPelicula(batman)
-}
-
-
-console.log(peliculasSoloEnCines)
 
 
 // conversion a JSON de Instancia 'Batman' desde clase  Pelicula
@@ -39,11 +20,6 @@ localStorage.setItem('Batman', pelicula1);
 const peliculaEnElLocalStorage = localStorage.getItem('Batman')
 const peliculaParseada = JSON.parse(peliculaEnElLocalStorage)
 // console.log(peliculaParseada)
-
-
-
-// addPeliculaEnLista()
-// addPeliculaEnLista(btnInfinityWar)
 
 
 

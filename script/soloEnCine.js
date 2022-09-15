@@ -14,6 +14,7 @@ class Cine {
     }
 }
 
+// Instancias de la clase Cine ---------------------------------------------------------------------------------------------->
 const hoyts = new Cine('Hoyts', 'Salta, Sarmiento 502');
 const cinemark = new Cine('Cinemark', 'Buenos Aires, suviria 112');
 
