@@ -4,6 +4,7 @@ const addPeliLista = document.querySelector('#btnAddPeliALista');
 const removePeliLista = document.querySelector('.removePeliDeLista'); // boton de seccion "mi lista" para eliminar una pelicula de mi lista
 const numero = document.querySelector('#num');
 const numero2 = document.querySelector('#num2');
+const parrafo = document.querySelector('#parrafo')
 let contador = localStorage.getItem('guardados');
 let seleccionDePeliculas = document.querySelector('#peliculasAGuardar') // select
 let peliculasGuardadas = document.querySelector('#peliculasGuardadas')
@@ -77,6 +78,7 @@ function incrementar() {
             peliculasGuardadasEnListaPorUsuario = []
             peliculasGuardadas.innerHTML += `<li>${element}</li>`
         });
+        parrafo.innerHTML=''
     }
 }
 
@@ -87,6 +89,13 @@ function modalCuenta() {
     usuario.innerHTML = `Hola ${usuario1}!`
 }
 modalCuenta()
+
+// Operador Logico AND que verifica si la lista esta vacia muestra ese mensaje
+function verificarLista() {
+    peliculasGuardadasEnListaPorUsuario.length === 0 && (parrafo.innerHTML='Lista vacía...')
+}
+
+verificarLista()
 
 
 // function decrementar() {
