@@ -1,3 +1,13 @@
+// incorporation toastify =====>
+const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+})
+
+// Class --------------------------------------------------------------------------------------------------->
 class PeliculaSoloEnCine {
     constructor(nombre, genero, duracion, descripcion) {
         this.nombre = nombre
@@ -90,8 +100,41 @@ function comprarEntrada() {
     horarioSeleccionado = seleccionHorario.value
 
     if ((peliculaSeleccionada != "Seleccione una Pelicula...") && (cineSeleccionado != "Seleccione un Cine...") && (diaSeleccionado != "Seleccione un dia...") && (horarioSeleccionado != "Horario...")) {
-        resumenCompra.innerHTML = `TU SELECCION: <span class="fw-bold">${peliculaSeleccionada} - ${cineSeleccionado} - ${diaSeleccionado} ${horarioSeleccionado} hrs.</span>`
+        
+        swalWithBootstrapButtons.fire({
+            title: 'Confirma su compra?',
+            text: `TU SELECCION: ${peliculaSeleccionada} - ${cineSeleccionado} - ${diaSeleccionado} ${horarioSeleccionado} hrs.`,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Si, confirmar',
+            cancelButtonText: 'No, cancelar!',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                swalWithBootstrapButtons.fire(
+                'Listo!',
+                `Gracias por su compra. Te esperamos el ${diaSeleccionado} a las ${horarioSeleccionado} hrs.`,
+                'success'
+                )
+            } else if (
+                // Read more about handling dismissals below
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire(
+                'Compra cancelada',
+                'Lo sentimos. Te esperamos en otra ocasion!',
+                'error'
+                )
+            }
+        })
+
+        // resumenCompra.innerHTML = `TU SELECCION: <span class="fw-bold">${peliculaSeleccionada} - ${cineSeleccionado} - ${diaSeleccionado} ${horarioSeleccionado} hrs.</span>`
     } else {
-        resumenCompra.innerHTML = 'Completa Todos los datos para poder comprar la entrada por favor.';
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Completa Todos los datos para poder comprar la entrada por favor.'
+        })
+        // resumenCompra.innerHTML = 'Completa Todos los datos para poder comprar la entrada por favor.';
     }
 }

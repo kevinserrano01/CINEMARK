@@ -1,4 +1,4 @@
-// Botones para agregar pelicula a mi lista
+// constantes
 const usuario = document.querySelector('#usuario');
 const addPeliLista = document.querySelector('#btnAddPeliALista');
 const removePeliLista = document.querySelector('.removePeliDeLista'); // boton de seccion "mi lista" para eliminar una pelicula de mi lista
@@ -52,6 +52,7 @@ addPeliLista.addEventListener('click', incrementar)
 
 
 // FUNCIONES ================================================================================================================>
+
 // Agregar Peliculas pre generadas a lista en DOM
 function agregarPeliculasAlDom() {
     peliculasAll.forEach( 
@@ -79,6 +80,15 @@ function incrementar() {
             peliculasGuardadas.innerHTML += `<li>${element}</li>`
         });
         parrafo.innerHTML=''
+
+        // incorporation of toastify library
+        Toastify({
+            text: `${seleccionDePeliculas.value} Guardada en tu lista!`,
+            duration: 3000,
+            style: {
+                background: "linear-gradient(to right, #00CCFE, #007F9F)",
+            }
+        }).showToast();
     }
 }
 

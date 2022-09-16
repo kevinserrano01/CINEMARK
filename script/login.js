@@ -57,7 +57,14 @@ function signIn() { // INICIAR SESION
             let user = JSON.parse(localStorage.getItem(signInUser.value));
             if (signInPass.value == user.userPass) {
                 inSession = true;
-                alert(`¡Bienvenido, ${signInUser.value}!`);
+                // incorporation of sweet alert 2 library
+                Swal.fire({
+                    position: 'top-end',
+                    icon: 'success',
+                    title: `¡Bienvenido, ${signInUser.value}!`,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
                 window.location = './pages/inicio.html'
             } else {
                 alerta1.innerHTML = 'Contraseña incorrecta!'
@@ -67,7 +74,7 @@ function signIn() { // INICIAR SESION
 }
 
 // localStorage
-// const nuevoPersonaje = JSON.stringify(nuevoPer)
-// localStorage.setItem('NuevoPersonaje', nuevoPersonaje)
-// const personajeEnElLocalStorage = localStorage.getItem('nuevoPersonaje')
-// const nuevoPJParseado = JSON.parse(personajeEnElLocalStorage)
+// const nuevoPersonaje = JSON.stringify(nuevoPer) // De objeto a Cadena de texto
+// localStorage.setItem('NuevoPersonaje', nuevoPersonaje) // => Guarda en (key): NuevoPersonaje y en (value):nuevoPersonaje que es un string
+// const personajeEnElLocalStorage = localStorage.getItem('nuevoPersonaje') // => agarramos ese nuevoPersonaje para luego convertirno en un OBjeto de js
+// const nuevoPJParseado = JSON.parse(personajeEnElLocalStorage) // => paseamos ese string en Objeto con sus propiedades
