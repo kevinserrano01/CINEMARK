@@ -1,4 +1,5 @@
 
+
 # Proyecto Final JavaScript Coder House 41580 - Cinepluss
 
 
@@ -10,6 +11,19 @@ Aplicacion Web para ver peliculas y comprar entradas para peliculas solo en cine
 Para iniciar el proyecto, clonar desde el repositorio:
 
 
+```bash
+  git clone https://github.com/kevinserrano01/CINEMARK.git
+```
+Una vez que el repositorio es clonado, mover a la carpeta:
+```bash
+  cd CINEMARK
+```
+Una vez en la carpeta clonada, instalar dependencias:
+
+```bash
+  npm install 
+```
+Al finalizar la instalacion de las dependencias, inicializar el archivo index.html
 ## Librerias Usadas
 
  - [Sweet Alert 2](https://sweetalert2.github.io/#download)
