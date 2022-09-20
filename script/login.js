@@ -1,3 +1,5 @@
+import {userInfo} from "./classes.js";
+
 let signUpUser = document.querySelector("#signUpUser");
 let signUpPass = document.querySelector("#signUpPass");
 let signInUser = document.querySelector("#signInUser");
@@ -13,12 +15,6 @@ let sessionKey;
 signUpButton.addEventListener("click", signUp);
 signInButton.addEventListener("click", signIn);
 
-class userInfo {
-    constructor(userName, userPass) {
-    this.userName = userName;
-    this.userPass = userPass;
-    }
-}
 
 function signUp() { //REGISTRARSE
     if (signUpUser.value == "" || signUpPass.value == "") {

@@ -25,4 +25,12 @@ class Pelicula {
     }
 }
 
-export { PeliculaSoloEnCine, Cine, Pelicula }
+// clase userInfo para Login
+class userInfo {
+    constructor(userName, userPass) {
+    this.userName = userName;
+    this.userPass = userPass;
+    }
+}
+
+export { PeliculaSoloEnCine, Cine, Pelicula, userInfo }

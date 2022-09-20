@@ -42,9 +42,9 @@
                         <a class="nav-link active" href="#">Solo en Cines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./miLista.html">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Mi lista <span id="num" class="badge bg-secondary">0</span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -156,7 +156,7 @@
                     <li class="nav-item"><a href="./inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
                     <!-- <li class="nav-item"><a href="./peliculas.html" class="nav-link px-2 text-muted">Peliculas</a></li> -->
                     <li class="nav-item"><a href="./novedades.html" class="nav-link px-2 text-muted">Solo en cine</a></li>
-                    <li class="nav-item"><a href="./miLista.html" class="nav-link px-2 text-muted">Mi lista</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mi lista</a></li>
                 </ul>
                 <p class="text-center text-muted">&copy; 2022 Kev</p>
             </footer>
@@ -178,6 +178,32 @@
         </div>
     </div>
     <!-- ===========================================================================-->
+
+    <!-- Modal Mi Lista-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Peliculas Guardadas en tu Lista</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Vertically centered modal -->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="col-12">
+                            <p id="parrafo" class="text-light"></p>
+                            <ul id="peliculasGuardadas">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Vaciar lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- js bootstrap -->
