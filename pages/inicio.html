@@ -44,9 +44,9 @@
                         <a class="nav-link active" href="./SoloEnCine.html">Solo en Cines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./miLista.html">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             Mi lista <span id="num" class="badge bg-secondary">0</span>
-                        </a>
+                        </button>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -169,7 +169,7 @@
     <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
     
     <!-- Peliculas guardadas en la lista ==============================-->
-    <div class="container text-light m-4 p-5">
+    <!-- <div class="container text-light m-4 p-5">
         <div class="row">
             <div class="col-12">
                 <h3>Peliculas Guardadas en tu Lista</h3>
@@ -178,7 +178,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- ==========================================================-->
 
     <!-- cs 1 ------------------------------------------------------>
@@ -545,13 +545,40 @@
     </div>
     <!-- ===========================================================================-->
 
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Peliculas Guardadas en tu Lista</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Vertically centered modal -->
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="col-12">
+                            <p id="parrafo" class="text-light"></p>
+                            <ul id="peliculasGuardadas">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Vaciar lista</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!-- incorporation of sweet alert2 library -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- incorporation of toastify library -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <!-- js script-->
+    <!-- js module-->
     <script src="../script/inicio.js" type="module"></script>
 </body>
 </html>
