@@ -9,6 +9,7 @@ let contador = localStorage.getItem('guardados');
 let seleccionDePeliculas = document.querySelector('#peliculasAGuardar') // select
 let peliculasGuardadas = document.querySelector('#peliculasGuardadas')
 
+// class
 class Pelicula {
     constructor(nombre, genero, duracion, descripcion) {
         // this.id = id -> preguntar
@@ -19,6 +20,7 @@ class Pelicula {
     }
 }
 
+// Objetos instanciados de la clase Pelicula
 const batman = new Pelicula("Batman", "Accion", "1h 25 min", "Descripcion...");
 const Harley_Quinn = new Pelicula("Harley Quinn", "Accion", "2h 18 min", "Después de ser arrojada a la calle por Joker, Harley lucha por levantarse.");
 const Infinity_War = new Pelicula('Infinity War', 'Accion', '2h 29 min', 'Descripcion')
@@ -47,6 +49,12 @@ let peliculasAll = [batman, Harley_Quinn, Infinity_War, Iron_Man, dragon_Ball_Su
 // ARRAY DE OBJETOS DONDE ALMACENO LAS PELICULAS ELEGIDAS POR EL USUARIO ==================>
 let peliculasGuardadasEnListaPorUsuario = [] // Aqui se almacenan las peliculas seleccionadas para guardar por el usuario
 
+// spread del array en un objeto
+const guardados = {
+    ...peliculasGuardadasEnListaPorUsuario
+}
+
+
 // Events ===========================================================>
 addPeliLista.addEventListener('click', incrementar)
 
@@ -67,7 +75,7 @@ agregarPeliculasAlDom();
 // haciendo click al boton esta funcion se activa e incrementa el contador del Navbar y a la vez muestra 
 function incrementar() {
     if (seleccionDePeliculas.value == 'Selecciona una Pelicula para agregar a tu lista...') {
-        alert('Ingrese una Pelicula para guardar')
+        Swal.fire('Ingrese una Pelicula para guardar')
     } else {
         contador++
         numero.textContent = contador
@@ -94,8 +102,7 @@ function incrementar() {
 
 // una variable constante para que luego de crear la primera cuenta no se cambie el nombre
 function modalCuenta() {
-    const usuario1 = localStorage.key(0);
-    console.log(usuario1)
+    const usuario1 = localStorage.key(1);
     usuario.innerHTML = `Hola ${usuario1}!`
 }
 modalCuenta()

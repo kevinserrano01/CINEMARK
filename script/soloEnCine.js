@@ -43,6 +43,18 @@ const cines = [hoyts, cinemark]
 const dias = ['Lunes', 'Miercoles', 'Viernes', 'Domingo']
 const horarios = ['14:30', '17:15', '20:45']
 
+// Desestructuracion de arrays
+const { dia1, dia2, dia3, dia4 } = dias;
+const {hora1, hora2, hora3} = horarios;
+const { p1, p2, p3, p4, p5 } = peliculasSoloEnCines
+
+// spread del array en un objeto
+const diasHabilitados = {
+    ...dias
+}
+
+console.log(diasHabilitados)
+
 // constantes ----------------------------------------------------------------------------------------------->
 const seleccionPelicula = document.querySelector('#seleccionPelicula')
 const seleccionCine = document.querySelector('#seleccionCine')
@@ -51,16 +63,26 @@ const seleccionHorario = document.querySelector('#seleccionHorario')
 const btnComprarEntrada = document.querySelector('#btnComprarEntrada')
 const resumenCompra = document.querySelector('#resumenCompra')
 const aviso = document.querySelector('#aviso')
+const btnCerrarCuenta = document.querySelector('#btnCerrarCuenta')
 
 // eventos ----------------------------------------------------------------------------------------------->
 btnComprarEntrada.addEventListener('click', comprarEntrada)
-
+// btnCerrarCuenta.addEventListener('click', cerrarSesion)
 
 // FUNCIONES ----------------------------------------------------------------------------------------------->
+// function cerrarSesion() {
+//     let usuario = localStorage.getItem('Kevin Serrano')
+//     localStorage.removeItem(usuario);
+//     window.location.replace('../index.html')
+//     console.log(usuario)
+
+//     // CONSULTAR
+// }
+
 function MostrarPeliculas() {
     peliculasSoloEnCines.forEach( 
             (el) =>
-            (seleccionPelicula.innerHTML += `<option value="${el.nombre}">${el.nombre}</option>`)
+            (seleccionPelicula.innerHTML += `<option value="${el?.nombre}">${el?.nombre}</option>` || 'Pelicula no disponible') // Acceso condicional a un objeto
         );
 }
 
@@ -117,7 +139,6 @@ function comprarEntrada() {
                 'success'
                 )
             } else if (
-                // Read more about handling dismissals below
                 result.dismiss === Swal.DismissReason.cancel
             ) {
                 swalWithBootstrapButtons.fire(
@@ -127,14 +148,11 @@ function comprarEntrada() {
                 )
             }
         })
-
-        // resumenCompra.innerHTML = `TU SELECCION: <span class="fw-bold">${peliculaSeleccionada} - ${cineSeleccionado} - ${diaSeleccionado} ${horarioSeleccionado} hrs.</span>`
     } else {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
             text: 'Completa Todos los datos para poder comprar la entrada por favor.'
         })
-        // resumenCompra.innerHTML = 'Completa Todos los datos para poder comprar la entrada por favor.';
     }
 }

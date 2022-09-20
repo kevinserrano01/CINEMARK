@@ -65,13 +65,22 @@ function signIn() { // INICIAR SESION
                     showConfirmButton: false,
                     timer: 1500
                 })
-                window.location = './pages/inicio.html'
+                window.location.replace('./pages/inicio.html')
             } else {
                 alerta1.innerHTML = 'Contraseña incorrecta!'
             }
         }
     }
 }
+
+// funcion para Verificar primero si ya hay un usuario creado que lo redireccione a la pagina principal directamente. Sino que le pida que cree el usuario primero.
+function verificarUsuario() {
+    if (inSession = true) {
+        window.location.replace('./pages/inicio.html')
+    }
+}
+
+// verificarUsuario();
 
 // localStorage
 // const nuevoPersonaje = JSON.stringify(nuevoPer) // De objeto a Cadena de texto
