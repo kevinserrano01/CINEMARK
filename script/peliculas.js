@@ -63,6 +63,13 @@ const addCarrito = e => {
 
     if (e.target.classList.contains('btn-success')) { //si cuando le demos click a algun elemento o boton coincida con la clase que le pasamos hacer lo siguiente...
         setCarrito(e.target.parentElement) //me trae todo el contenido de card ya se su: (title, precio, id, y  boton) y empujamos todo a setCarrito
+        Toastify({
+            text: "Agregado a tu carrito!",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            }
+        }).showToast();
     }
     e.stopPropagation() //detener cualquier otro evento que se puede generar en nuestras cards
 }
