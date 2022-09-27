@@ -9,8 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../icon/2809591.ico">
     <link href="https://fonts.googleapis.com/css2?family=Belleza&display=swap" rel="stylesheet">
-    <!-- css toastify -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- css bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- css styles -->
@@ -36,10 +34,10 @@
                         <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./combos.html">Combos</a>
+                        <a class="nav-link active" aria-current="page" href="#">Combos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Solo en Cines</a>
+                        <a class="nav-link active" href="./SoloEnCine.html">Solo en Cines</a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -68,103 +66,104 @@
     </nav>
     <!-- end Navbar ----------------------------------------------------------------------------------------------------------------------------------------------------->
 
+
+
     <!-- start Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
-    <!-- cs 1 ------------------------------------------------------>
     <div class="container">
-        <h2 class="text-light pt-4">Solo en Cines</h2>
-        <h3 class="text-light pt-4">Compra tu entrada ahora mismo !</h3>
-        <!-- start Select -------------------------------------------------------------------------------------------->
-        <div class="container mt-3">
-            <div class="row">
-                <div class="col-xs-12 col-md-2 col-lg-3">
-                    <select id="seleccionPelicula" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Seleccione una Pelicula...</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-2 col-lg-3">
-                    <select id="seleccionCine" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Seleccione un Cine...</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-3 col-lg-2">
-                    <select id="seleccionDia" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Seleccione un dia...</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-2 col-lg-2">
-                    <select id="seleccionHorario" name="peliculasAGuardar" class="form-select mb-2" aria-label="Default select example">
-                        <option selected>Horario...</option>
-                    </select>
-                </div>
-                <div class="col-xs-12 col-md-2 col-lg-2">
-                    <button type="button" class="btn btn-warning" id="btnComprarEntrada">
-                        Comprar entrada
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p id="aviso" class="text-danger fw-bold text-center"></p>
-                </div>
-            </div>
-        </div>
-        <!-- end Select -------------------------------------------------------------------------------------------->
+        <section class="text-light">
+            <h1 id="title1" class="text-center mt-4 mb-4 fw-bold">COMBOS</h1>
+            
 
-        <div class="row pt-5">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/Bienvenidos-al-infierno.jpg" alt="portada" width="300px">
-                </a>
-                <p class="text-light text-center fs-5">Bienvenidos al infierno</p>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/Dragon-ball-super-new.jpg" alt="portada" width="300px">
-                </a>
-                <p class="text-light text-center fs-5">Dragon Ball Super Heroe</p>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/El-Paraiso.jpg" alt="portada" width="300px">
-                </a>
-                <p class="text-light text-center fs-5">El Paraiso</p>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/Thor.jpg" alt="portada" width="300px">
-                </a>
-                <p class="text-light text-center fs-5">Thor amor y trueno</p>
-            </div>
-        </div>
 
-        <div class="row pt-5">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="#">
-                    <img class="mb-3" src="../images/Telefono-Negro.jpg" alt="portada" width="300px">
-                </a>
-                <p class="text-light text-center fs-5">El Telefono Negro</p>
-            </div>
-        </div>
+        </section>
+
+        <h2 id="stock" class="text-center mt-3 fw-bold text-light">Stock</h2>
+        <hr>
+        <div id="cards" class="row"></div> <!--luego aqui va a ir mi CARD-->
+        <hr>
+
+        <h2 id="cars" class="text-center text-light mt-5">Productos seleccionados</h2>
+        <table class="table bg-light p-2">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+                <tr id="footer"> <!--Aqui se va a pintar mi footer-->
+                    <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                </tr>
+            </tfoot>
+        </table>
+
     </div>
-    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------->
-    <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
 
+    <div class="container text-center">
+        <button type="button" class="btn btn-success">Comprar todo</button>
+    </div>
+
+    <!-- TEMPLATE FOOTER -->
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                vaciar todo
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <!-- TEMPLATE CARRITO -->
+    <template id="template-carrito">
+    <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+            <button class="btn btn-info btn-sm"> + </button>
+            <button class="btn btn-danger btn-sm"> - </button>
+        </td>
+        <td>$ <span>500</span></td>
+    </tr>
+    </template>
+
+    <!-- CARDS -->
+    <template id="template-card">
+        <div class="col-12 col-md-4 mb-2">
+            <div class="card">
+                <div class="card-body">
+                    <img src="" alt="" class="card-img-top">
+                    <h5>Titulo</h5>
+                    <p>precio</p>
+                        <button class="btn btn-success ">Buy</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- end Main ---------------------------------------------------------------------------------------------------------------------------------------------------->
+    
     <!-- start Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
         <div class="container-fluid pt-5">
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                     <li class="nav-item"><a href="./inicio.html" class="nav-link px-2 text-muted">Inicio</a></li>
-                    <li class="nav-item"><a href="./combos.html" class="nav-link px-2 text-muted">Combos</a></li>
+                    <!-- <li class="nav-item"><a href="./peliculas.html" class="nav-link px-2 text-muted">Peliculas</a></li> -->
                     <li class="nav-item"><a href="./novedades.html" class="nav-link px-2 text-muted">Solo en cine</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Mi lista</a></li>
+                    <li class="nav-item"><a href="./miLista.html" class="nav-link px-2 text-muted">Mi lista</a></li>
                 </ul>
                 <p class="text-center text-muted">&copy; 2022 Kev</p>
             </footer>
         </div>
-
-        <div class="b-example-divider"></div>
     <!-- end Footer -------------------------------------------------------------------------------------------------------------------------------------------------->
-
+    
+    
     <!-- MODAL USUARIO - CUENTA ===========================================================================-->
     <!-- Modal -->
     <div class="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
@@ -174,7 +173,9 @@
         </div>
         <div class="offcanvas-body">
             <p id="usuario" class="text-light fw-bold m-4 fs-4"></p>
-            <button id="btnCerrarCuenta" type="button" class="btn btn-secondary m-4">Cerrar Sesion</button>
+            <a href="../index.html">
+                <button type="button" class="btn btn-secondary m-4">Cerrar Sesion</button>
+            </a>
         </div>
     </div>
     <!-- ===========================================================================-->
@@ -198,7 +199,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                     <button type="button" class="btn btn-primary">Vaciar lista</button>
                 </div>
             </div>
@@ -208,12 +209,8 @@
 
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- incorporation of sweet alert2 library -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- incorporation of toastify library -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <!-- Js module -->
-    <script src="../script/main.js" type="module"></script>
+    <!-- js module-->
+    <script src="../script/peliculas.js"></script>
 
 </body>
 </html>
