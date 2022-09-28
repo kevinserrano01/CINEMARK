@@ -3,6 +3,7 @@ import { peliculasAll, peliculasGuardadasEnListaPorUsuario } from "./instances.j
 // constantes
 const usuario = document.querySelector('#usuario');
 const addPeliLista = document.querySelector('#btnAddPeliALista');
+const vaciarLista = document.querySelector('#btnVaciarLista')
 // const removePeliLista = document.querySelector('.removePeliDeLista'); // boton de seccion "mi lista" para eliminar una pelicula de mi lista
 const numero = document.querySelector('#num');
 const numero2 = document.querySelector('#num2');
@@ -14,6 +15,9 @@ let peliculasGuardadas = document.querySelector('#peliculasGuardadas')
 
 // Events ===========================================================>
 addPeliLista.addEventListener('click', incrementar)
+vaciarLista.addEventListener('click', () => {
+    peliculasGuardadas.innerHTML = '';
+})
 
 
 // FUNCIONES ================================================================================================================>

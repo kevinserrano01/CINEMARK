@@ -7,6 +7,7 @@ const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment() //es como una memoria bolatil, se disuelve
 const btnComprarTodo = document.querySelector('#btnComprarTodo')
+const usuario = document.querySelector('#usuario');
 let carrito = {} //creamos un objeto vacio
 
 btnComprarTodo.addEventListener('click', eventoComprarTodo)
@@ -207,4 +208,10 @@ const btnAccion = e => {
     e.stopPropagation() //detener cualquier otro evento que se puede generar en nuestros ifs
 }
 
-// end
+
+// una variable constante para que luego de crear la primera cuenta no se cambie el nombre
+function modalCuenta() {
+    const usuario1 = localStorage.key(1);
+    usuario.innerHTML = `Hola ${usuario1}!`
+}
+modalCuenta()
