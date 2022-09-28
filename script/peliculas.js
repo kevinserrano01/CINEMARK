@@ -6,9 +6,48 @@ const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
 const fragment = document.createDocumentFragment() //es como una memoria bolatil, se disuelve
+const btnComprarTodo = document.querySelector('#btnComprarTodo')
 let carrito = {} //creamos un objeto vacio
 
+btnComprarTodo.addEventListener('click', eventoComprarTodo)
 
+function eventoComprarTodo() {
+    const swalWithBootstrapButtons = Swal.mixin({
+        customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+        },
+        buttonsStyling: false
+    })
+    
+    swalWithBootstrapButtons.fire({
+        title: 'Estas seguro?',
+        text: "¡No podrás revertir esto!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Si, comprar!',
+        cancelButtonText: 'No, cancelar!',
+        reverseButtons: true
+    }).then((result) => {
+        if (result.isConfirmed) {
+        swalWithBootstrapButtons.fire(
+            'Listo!!',
+            'Gracias por contar con nosotros.',
+            'success'
+        )
+        carrito = {};
+        pintarCarrito()
+        } else if (
+        result.dismiss === Swal.DismissReason.cancel
+        ) {
+        swalWithBootstrapButtons.fire(
+            'Cancelado!',
+            'puedes volver a intentarlo :)',
+            'error'
+        )
+        }
+    })
+}
 
 // una vez que se cargue nuestro sitio web y se carguen los productos ... ===================>
 document.addEventListener('DOMContentLoaded', () => { 
@@ -19,26 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })
 
-
 // delegar con Event Delegation al hacer click en una card, agregarlo al carrito==============================>
 cards.addEventListener('click', e => {
     addCarrito(e)
 })
 
-
 items.addEventListener('click', e => {
     btnAccion(e)
 })
 
-
 // accedemos a los datos del archivo json ===================>
 const fetchData = async () => {
-        const res = await fetch('../peliculas.json');
+        const res = await fetch('../combos.json');
         const data = await res.json()
         pintarCard(data)
 }
-
-
 
 //pintar cards ===================>
 const pintarCard = data => { 
@@ -53,8 +87,6 @@ const pintarCard = data => {
     });
     cards.appendChild(fragment) //ocupamos cards para mandar el fragment y evitar reflow
 }
-
-
 
 // funcion flecha para agregar productos al carrito =========================================>
 const addCarrito = e => {
